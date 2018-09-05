@@ -128,7 +128,7 @@ List with example:
 ## Installation
 
 ```bash
-GOREPLACE_VERSION=1.1.2 \
+GOREPLACE_VERSION=1.1.3 \
 && wget -O /usr/local/bin/go-replace https://github.com/joerghall/go-replace/releases/download/$GOREPLACE_VERSION/gr-64-linux \
 && chmod +x /usr/local/bin/go-replace
 ```
