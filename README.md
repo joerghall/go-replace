@@ -1,14 +1,16 @@
 # go-replace
 
-[![GitHub release](https://img.shields.io/github/release/webdevops/go-replace.svg)](https://github.com/webdevops/go-replace/releases)
-[![license](https://img.shields.io/github/license/webdevops/go-replace.svg)](https://github.com/webdevops/go-replace/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/webdevops/go-replace.svg?branch=master)](https://travis-ci.org/webdevops/go-replace)
-[![Github All Releases](https://img.shields.io/github/downloads/webdevops/go-replace/total.svg)]()
-[![Github Releases](https://img.shields.io/github/downloads/webdevops/go-replace/latest/total.svg)]()
+[![GitHub release](https://img.shields.io/github/release/joerghall/go-replace.svg)](https://github.com/joerghall/go-replace/releases)
+[![license](https://img.shields.io/github/license/joerghall/go-replace.svg)](https://github.com/joerghall/go-replace/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/joerghall/go-replace.svg?branch=master)](https://travis-ci.org/joerghall/go-replace)
+[![Github All Releases](https://img.shields.io/github/downloads/joerghall/go-replace/total.svg)]()
+[![Github Releases](https://img.shields.io/github/downloads/joerghall/go-replace/latest/total.svg)]()
 
 Cli utility for replacing text in files, written in golang and compiled for usage in Docker images
 
 Inspired by https://github.com/piranha/goreplace
+
+Cloned from https://github.com/webdevops/go-replace
 
 ## Features
 
@@ -127,15 +129,6 @@ List with example:
 
 ```bash
 GOREPLACE_VERSION=1.1.2 \
-&& wget -O /usr/local/bin/go-replace https://github.com/webdevops/go-replace/releases/download/$GOREPLACE_VERSION/gr-64-linux \
+&& wget -O /usr/local/bin/go-replace https://github.com/joerghall/go-replace/releases/download/$GOREPLACE_VERSION/gr-64-linux \
 && chmod +x /usr/local/bin/go-replace
 ```
-
-
-## Docker images
-
-| Image                          | Description                                     |
-|:-------------------------------|:------------------------------------------------|
-| `webdevops/go-replace:latest`  | Latest release, binary only                     |
-| `webdevops/go-replace:master`  | Current development version in branch `master`  |
-| `webdevops/go-replace:develop` | Current development version in branch `develop` |
