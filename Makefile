@@ -41,10 +41,10 @@ build/gr-arm64-linux: $(SOURCE)
 	CGO_ENABLED=0 GOOS=linux GOARCH=arm64 $(GOBUILD) -o $@
 
 release: build
-	github-release release -u webdevops -r go-replace -t "$(TAG)" -n "$(TAG)" --description "$(TAG)"
+	github-release release -u joerghall -r go-replace -t "$(TAG)" -n "$(TAG)" --description "$(TAG)"
 	@for x in $(ALL); do \
 		echo "Uploading $$x" && \
-		github-release upload -u webdevops \
+		github-release upload -u joerghall \
                               -r go-replace \
                               -t $(TAG) \
                               -f "$$x" \
