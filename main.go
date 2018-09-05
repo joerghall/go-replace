@@ -14,8 +14,8 @@ import (
 )
 
 const (
-	Author  = "webdevops.io"
-	Version = "1.1.2"
+	Author  = "joerghall"
+	Version = "1.1.3"
 )
 
 type changeset struct {
@@ -243,7 +243,7 @@ func handleSpecialCliOptions(args []string) {
 	// --version
 	if opts.ShowVersion {
 		fmt.Println(fmt.Sprintf("go-replace version %s", Version))
-		fmt.Println(fmt.Sprintf("Copyright (C) 2017 %s", Author))
+		fmt.Println(fmt.Sprintf("Copyright (C) 2018 %s", Author))
 		os.Exit(0)
 	}
 
